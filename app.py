@@ -1,13 +1,11 @@
 
 
 import pickle
-import sklearn
 import streamlit as st
 import numpy as np
 
 
 st.header('Book Recommender System Using Machine Learning')
-model = pickle.load(open('Folders/model_knn.pkl','rb'))
 book_names = pickle.load(open('Folders/book_name.pkl','rb'))
 final_rating = pickle.load(open('Folders/final_rating.pkl','rb'))
 book_pivot = pickle.load(open('Folders/pivot_book.pkl','rb'))
